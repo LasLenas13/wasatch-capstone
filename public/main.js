@@ -42,6 +42,72 @@ function isValidEmail(email) {
   return emailRegex.test(email);
 }
 
+const ratingStars = document.querySelectorAll('.rating-stars span');
+const ratingDisplay = document.getElementById('rating');
+const submitBtn = document.getElementById('submit-btn');
+const trailNameInput = document.getElementById('trail-name');
+const trailList = document.getElementById('trail-list');
 
+let selectedRating = 0;
+let trailRatings = {};
+
+ratingStars.forEach(star => {
+    star.addEventListener('click', function () {
+        selectedRating = parseInt(this.getAttribute('data-rating'));
+
+      
+        ratingStars.forEach(s => {
+            if (parseInt(s.getAttribute('data-rating')) <= selectedRating) {
+                s.classList.add('active');
+            } else {
+                s.classList.remove('active');
+            }
+        });
+
+      
+        ratingDisplay.textContent = selectedRating;
+    });
+});
+
+submitBtn.addEventListener('click', function () {
+    const trailName = trailNameInput.value.trim().toLowerCase();
+
+    if (trailName && selectedRating > 0) {
+        if (!trailRatings[trailName]) {
+            
+            trailRatings[trailName] = {
+                totalRating: selectedRating,
+                ratingsCount: 1,
+            };
+
+            
+            const listItem = document.createElement('li');
+            listItem.id = `trail-${trailName}`;
+            listItem.textContent = `${trailName}: ${(selectedRating).toFixed(2)} star${selectedRating > 1 ? 's' : ''}`;
+
+            // Add the list item to the trail list
+            trailList.appendChild(listItem);
+        } else {
+            // Update the existing trail entry
+            trailRatings[trailName].totalRating += selectedRating;
+            trailRatings[trailName].ratingsCount++;
+
+            
+            const averageRating = trailRatings[trailName].totalRating / trailRatings[trailName].ratingsCount;
+
+            
+            const listItem = document.getElementById(`trail-${trailName}`);
+            listItem.textContent = `${trailName}: ${averageRating.toFixed(2)} star${averageRating !== 1 ? 's' : ''}`;
+        }
+
+
+        trailNameInput.value = '';
+        selectedRating = 0;
+        ratingDisplay.textContent = '0';
+        ratingStars.forEach(star => star.classList.remove('active'));
+    } else {
+        alert('Please enter a trail name and select a rating.');
+    }
+});
 
   

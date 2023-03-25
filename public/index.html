@@ -19,9 +19,28 @@
     </form>
     </nav>
     <main>
-
-
-
+        <section id="users-rating">
+                <div class="rating-card">
+        <h2>Trail Run Rating</h2>
+        <p>Trail Name:</p>
+        <input type="text" id="trail-name" placeholder="Enter trail name">
+        <p>Rate this trail:</p>
+        <div class="rating-stars">
+            <span data-rating="1">★</span>
+            <span data-rating="2">★</span>
+            <span data-rating="3">★</span>
+            <span data-rating="4">★</span>
+            <span data-rating="5">★</span>
+        </div>
+        <p>Your rating: <span id="rating">0</span></p>
+        <button id="submit-btn">Submit</button>
+    </div>
+    <div class="trail-post">
+        <h2>Trail Ratings</h2>
+        <ul id="trail-list">
+        </ul>
+    </div>
+        </section>
     </main>
     <footer>
         <section class="email-sign-up">

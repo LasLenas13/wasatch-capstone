@@ -1,0 +1,22 @@
+A Local Trail Run Rating App
+
+MVP Features:
+
+-Register User/Runner?
+
+-Rate Trails
+
+-Post Pics
+
+-Inspirational Quote
+
+
+Front End Request: Inspirational Quote
+
+Front End Interactive: Rating Trail/Photo Gallery
+
+Custom Styling: Nature pics, 
+
+5 semantic tags: header, nav, main, form, input, h2, div, button, footer
+
+Maybe will have 2 views: the other being Photo gallery
