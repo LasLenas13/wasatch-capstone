@@ -31,7 +31,7 @@ module.exports = {
           res.send("Thank you for signing up!");
         } catch (error) {
           console.error(error);
-          res.status(500).send('Error signing up');
+          res.status(400).send('Error signing up');
         }
       }
     

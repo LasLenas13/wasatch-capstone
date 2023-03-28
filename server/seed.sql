@@ -1,5 +1,5 @@
-CREATE TABLE newsletter(
-    id SERIAL PRIMARY KEY,
-    email VARCHAR NOT NULL,
-    date DATE
-)
+CREATE TABLE newsletter (
+  id SERIAL PRIMARY KEY,
+  email TEXT NOT NULL UNIQUE,
+  created_at TIMESTAMP DEFAULT NOW()
+);
