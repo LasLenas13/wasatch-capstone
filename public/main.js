@@ -2,7 +2,7 @@ let inspirationButton = document.getElementById("inspirationBtn");
 let signUpButton = document.getElementById("sign-up");
 
 const getInspire = () => {
-  axios.get("http://localhost:5150/api/inspire/")
+  axios.get("http://localhost:5432/api/inspire/")
     .then(res => {
       const data = res.data;
       alert(data);
@@ -17,7 +17,7 @@ const signUp = () => {
   const email = emailInput.value;
 
   if (isValidEmail(email)) {
-    axios.post("http://localhost:5150/api/sign-up/", { email })
+    axios.post("http://localhost:5432/api/sign-up/", { email })
       .then(res => {
         const data = res.data;
         alert(data);
@@ -70,7 +70,7 @@ ratingStars.forEach(star => {
 });
 
 submitBtn.addEventListener('click', function () {
-    const trailName = trailNameInput.value.trim().toLowerCase();
+    const trailName = trailNameInput.value.trim().toUpperCase();
 
     if (trailName && selectedRating > 0) {
         if (!trailRatings[trailName]) {

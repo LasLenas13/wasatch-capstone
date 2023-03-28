@@ -1,24 +1,216 @@
+
+a {
+    width: 50px;
+    height: 65px;
+    padding: 20px;
+    padding-right: 20px;
+    background-color: #93c876;
+    color: white;
+    position: fixed;
+    top: 10px;
+    right: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 50%;
+  } 
+
+
 body {
     font-family: Arial, sans-serif;
-}
-
-.rating-card {
-    width: 300px;
-    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background-color: #f2b01e;
+    color: #fff;
     padding: 20px;
+    text-align: center;
+  }
+  
+  header h1 {
+    font-size: 48px;
+    margin: 0;
+  }
+  
+  nav {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+  }
+  
+  nav a {
+    color: #fff;
+    font-size: 16px;
+    text-decoration: none;
+    transition: color 0.2s ease-in-out;
+  }
+  
+  nav a:hover {
+    color: #f2b01e;
+  }
+  
+  .inspire {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .inspire h2 {
+    color: #fff;
+    font-size: 18px;
+    margin: 0;
+    margin-bottom: 10px;
+  }
+  
+  #inspirationBtn {
+    background-color: #fff;
+    border: none;
     border-radius: 5px;
-    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
-}
-
-.rating-stars {
-    font-size: 2em;
-}
-
-.rating-stars span {
+    color: #f2b01e;
     cursor: pointer;
-    color: #ccc;
-}
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 10px;
+    padding: 10px 20px;
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+  }
+  
+  #inspirationBtn:hover {
+    background-color: #f2b01e;
+    color: #fff;
+  }
 
-.rating-stars span.active {
-    color: #f1c40f;
-}
+  main {
+    margin: 40px 20px;
+  }
+  
+
+  #users-rating {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  
+
+  .rating-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+    margin-right: 20px;
+    margin-bottom: 60px;
+    padding: 20px;
+    text-align: center;
+    width: 300px;
+  }
+  
+  
+  .rating-card h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .rating-card p {
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 20px;
+  }
+  
+  .rating-card input[type="text"] {
+    border: none;
+    border-bottom: 2px solid #ccc;
+    font-size: 16px;
+    margin-top: 10px;
+    padding: 10px;
+    width: 100%;
+  }
+  
+  .rating-stars {
+    color: #f2b01e;
+    font-size: 24px;
+    margin-top: 20px;
+  }
+  
+  .rating-stars span {
+    cursor: pointer;
+    display: inline-block;
+    transition: color 0.2s ease-in-out;
+  }
+  
+  .rating-stars span:hover,
+  .rating-stars span:hover ~ span,
+  .rating-stars span.active,
+  .rating-stars span.active ~ span {
+    color: #e5c30d;
+  }
+  
+  #rating {
+    color: #f2b01e;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  #submit-btn {
+    background-color: #f2b01e;
+    border: none;
+    border-radius: 5
+  }  
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 8px;
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    width: calc(100% - 20px);
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  footer h2 {
+    color: #fff;
+    font-size: 12px;
+    margin: 0;
+    margin-right: 10px;
+  }
+  
+  footer input[type="text"] {
+    border: none;
+    border-bottom: 2px solid #ccc;
+    font-size: 12px;
+    margin-top: 5px;
+    margin-right: 10px;
+    padding: 6px;
+    width: 150px;
+  }
+  
+  #sign-up {
+    background-color: #f2b01e;
+    border: none;
+    border-radius: 3px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 6px 12px;
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+  }
+  
+  #sign-up:hover {
+    background-color: #fff;
+    color: #f2b01e;
+  }
+  
+  
+
+
+

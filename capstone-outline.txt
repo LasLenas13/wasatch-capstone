@@ -2,11 +2,11 @@ A Local Trail Run Rating App
 
 MVP Features:
 
--Register User/Runner?
+-Submit Email for Newsletter
 
 -Rate Trails
 
--Post Pics
+-Link to Photo Gallery
 
 -Inspirational Quote
 

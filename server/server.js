@@ -1,5 +1,8 @@
+require('dotenv').config()
 const express = require('express')
 const cors = require('cors')
+
+const {PORT} = process.env
 
 const app = express()
 
@@ -16,7 +19,6 @@ app.post("/api/sign-up", signUp);
 
 
 
-const PORT = 5150
 
 app.listen(PORT, () => {
     console.log(`server listening on port ${PORT}`)
