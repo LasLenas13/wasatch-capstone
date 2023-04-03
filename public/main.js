@@ -85,10 +85,10 @@ submitBtn.addEventListener('click', function () {
             listItem.id = `trail-${trailName}`;
             listItem.textContent = `${trailName}: ${(selectedRating).toFixed(2)} star${selectedRating > 1 ? 's' : ''}`;
 
-            // Add the list item to the trail list
+            
             trailList.appendChild(listItem);
         } else {
-            // Update the existing trail entry
+            
             trailRatings[trailName].totalRating += selectedRating;
             trailRatings[trailName].ratingsCount++;
 

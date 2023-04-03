@@ -6,10 +6,9 @@ body {
     padding: 0;
   }
 
-  header {
-    font-size: 25px;
-    display: flex;
-    justify-content: center;
+  h1 {
+    font-size: 4rem;
+    text-align: center;
   }
   
   .gallery {
@@ -45,7 +44,6 @@ body {
     margin: 0;
   }
   
-  /* Lightbox CSS */
   .lightbox {
     display: none;
     position: fixed;
@@ -64,4 +62,16 @@ body {
     border: 1px solid #888;
     width: 80%;
     max-width: 500px
+  }
+
+  span {
+    opacity: 0;
+    transition: all 0.5s ease;
+    transform: translateY(50px);
+    display: inline-block;
+  }
+  
+  span.fade {
+   opacity: 1;
+   transform: translateY(0px);
   }

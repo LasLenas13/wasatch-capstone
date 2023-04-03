@@ -16,10 +16,6 @@ app.get("/api/inspire", getInspire);
 app.post("/api/sign-up", signUp);
 
 
-
-
-
-
 app.listen(PORT, () => {
     console.log(`server listening on port ${PORT}`)
 })

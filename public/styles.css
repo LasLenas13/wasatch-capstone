@@ -86,7 +86,10 @@ body {
   }
 
   main {
-    margin: 40px 20px;
+    
+    background-image: url("https://cdn.pixabay.com/photo/2020/04/18/10/53/mountain-5058746__480.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
   }
   
 
@@ -95,6 +98,7 @@ body {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    padding-top: 20px;
   }
   
 
@@ -162,19 +166,21 @@ body {
     border-radius: 5
   }  
 
-footer {
+  footer {
     background-color: #333;
     color: #fff;
     padding: 8px;
     position: fixed;
-    bottom: 10px;
-    left: 10px;
-    width: calc(100% - 20px);
+    bottom: 1px;
+    /* left: 10px; */
+    width: calc(100% - 5px);
     font-size: 12px;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 0;
   }
+  
   
   footer h2 {
     color: #fff;
@@ -210,7 +216,9 @@ footer {
     color: #f2b01e;
   }
   
-  
+  .trail-post {
+    color:#f2b01e;
+  }
 
 
 
