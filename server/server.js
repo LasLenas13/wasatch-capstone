@@ -7,6 +7,7 @@ const {PORT} = process.env
 const app = express()
 
 app.use(express.json())
+app.use(express.static(__dirname + '../../public'))
 app.use(cors())
 
 const { getInspire, signUp } = require("./controller");
