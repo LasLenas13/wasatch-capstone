@@ -4,19 +4,22 @@ MVP Features:
 
 -Submit Email for Newsletter
 
--Rate Trails
+-Rate Trails with Stars, app will give average rating
 
--Link to Photo Gallery
+-Link to Photo Gallery, click on photo to enlarge
 
--Inspirational Quote
+-Inspirational Quote for motivation to run
 
 
-Front End Request: Inspirational Quote
+Front End Request: Get - Inspirational Quote
+                   Post - Email to Database
 
 Front End Interactive: Rating Trail/Photo Gallery
 
 Custom Styling: Nature pics, 
 
-5 semantic tags: header, nav, main, form, input, h2, div, button, footer
+5 semantic tags: header, nav, main, form, input, h2, div, button, footer, span
 
-Maybe will have 2 views: the other being Photo gallery
+3 views: the others being Photo Gallery and Trail Info page
+
+Connects to LocalHost:5432/
